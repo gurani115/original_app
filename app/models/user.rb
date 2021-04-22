@@ -4,6 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :name, presence: true
-  validates :employee_number, presence: true
+  with_options presence: true do
+    validates :name
+    validates :employee_number, format: {with: /\A[0-9]+\z/}
+  end
+  validates :password, length: {minimum: 6 }
+  validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i}
 end
