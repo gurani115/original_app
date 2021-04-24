@@ -122,3 +122,11 @@ select {
   height: 80px;
   width: 100%;
 }
+
+.back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 35%;
+  text-decoration: none;
+}
