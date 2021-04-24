@@ -11,6 +11,7 @@
 .side-header {
   height: 100px;
   padding: 0px 20px;
+  background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center;
