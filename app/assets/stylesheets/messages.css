@@ -11,7 +11,7 @@
 .side-header {
   height: 100px;
   padding: 0px 20px;
-  background-color: #253141;
+  background-color: #0f1b2c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +54,7 @@
 
 .main-head {
   height: 100px;
-  background-color: #ffffff;
+  background-color: #38AEF0;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
