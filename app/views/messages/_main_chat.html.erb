@@ -1,9 +1,13 @@
 <div class="main-head">
   <div class="title">
-    <%= @room.room_name %>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
+  </div>
+  <div class="title">
+   <%= @room.room_name %>
   </div>
   <div class="right-header">
     <div class="header-button">
+     
       <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
     </div>
   </div>
