@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
   def index
+    @group = Group.all
   end
 
   def new

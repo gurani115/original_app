@@ -1,0 +1,20 @@
+<div class='contents row'>
+  <div class='container'>
+    <div class='title'>新規手順書作成</div>
+    <div class='text'>
+      <%= form_with(model: @group, local: true) do |form| %>
+      <div class='click-upload'>
+        <span class='upload'>クリックしてファイルをアップロード</span>
+        <%= form.file_field :image, id:'item-image' %>
+      </div>
+      <div class='group-name'>
+        <%= form.text_field :group_name, placeholder: 'グループ名' %>
+        <%= form.submit '作成' %>
+      </div>
+      <% end %>
+    </div>
+  <%= link_to(root_path, class:'root-btn') do %>
+    <span>戻る</span>
+  <% end %>
+  </div>
+</div>
