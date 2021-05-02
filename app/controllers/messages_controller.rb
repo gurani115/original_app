@@ -5,7 +5,19 @@ class MessagesController < ApplicationController
     @messages = @room.messages.includes(:user)
   end
 
+  def new
+    @message = Message.new
+    @rooms = Room.new
+  end
+
   def create
+    @rooms = Message.new(room_params)
+    if @room.save
+      redirect_to root_path
+    else
+      render :new
+    end
+
     @room = Room.find(params[:room_id])
     @message = @room.messages.new(message_params)
     if @message.save
@@ -20,5 +32,9 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:text, :image).merge(user_id: current_user.id)
+  end
+
+  def room_params
+    params.require(:message).permit(:room_name)
   end
 end

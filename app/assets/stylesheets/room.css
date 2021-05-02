@@ -1,3 +1,158 @@
+.top-page-header {
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 50px;
+  
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.user-name {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+  border: 1px solid darkred;
+  padding: 20px;
+}
+
+.create_procedure {
+  width: 100vw;
+  background-color: darkgray;
+}
+
+.heading-name {
+  text-align: center;
+  border-bottom: 1px solid red;
+  width: 200px;
+  margin: 5px auto;
+  padding: 20px 0px 10px 0px;
+}
+
+.contents.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.container {
+  height: 300px;
+}
+
+.title {
+  font-size: 30px;
+  border-bottom: 1px solid red;
+}
+
+.text {
+  height: 800px;
+  padding: 50px;
+  background-color: lightgray;
+}
+
+.click-upload {
+  background-color: lemonchiffon;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.group-name {
+  height: 100px;
+  font-size: 18px;
+  background-color: lemonchiffon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {
+  height: 100px;
+  font-size: 18px;
+  background-color: lemonchiffon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-create {
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.new-create-btn {
+  height: 40px;
+  width: 250px;
+  background-color: lightskyblue;
+}
+
+.root-btn {
+  font-size: 20px;
+}
+
+.box {
+  height: 50px;
+  width: 300px;
+}
+
+.work_box {
+  height: 50px;
+  width: 300px;
+}
+
+.create-page {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgreen;
+}
+
+.create-btn {
+  color: blue;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.group-image {
+  width: 200px;
+  height: 200px;
+}
+
+.contents {
+  text-align: center;
+  padding: 20px;
+}
+
 h1 {
   letter-spacing: 2px;
   font-size: 24px;

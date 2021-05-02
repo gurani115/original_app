@@ -43,8 +43,13 @@
 }
 
 .room-name a {
+  font-size: 20px;
   text-decoration: none;
   color: white;
+}
+
+.room-name {
+  padding: 0 0 70px 0;
 }
 
 .main {

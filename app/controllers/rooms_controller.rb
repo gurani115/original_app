@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
   def index
+    @rooms = Room.order(id: :DESC)
     @group = Group.all
   end
 
@@ -16,6 +17,10 @@ class RoomsController < ApplicationController
     end
   end
 
+  def show
+    @room = Room.find(params[:id])
+  end
+
   def destroy
     room = Room.find(params[:id])
     room.destroy
@@ -25,6 +30,6 @@ class RoomsController < ApplicationController
   private
 
   def room_params
-    params.require(:room).permit(:room_name).merge(user_id: current_user.id)
+    params.require(:room).permit(:group_name, :first_work, :second_work, :third_work, :fourth_work, :fifth_work, :image).merge(user_id: current_user.id)
   end
 end

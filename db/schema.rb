@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_28_020206) do
+ActiveRecord::Schema.define(version: 2021_04_29_140209) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_020206) do
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "room_name"
     t.text "text"
     t.bigint "room_id"
     t.bigint "user_id"
@@ -49,14 +50,13 @@ ActiveRecord::Schema.define(version: 2021_04_28_020206) do
     t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
-  create_table "procedures", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "procedure_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "room_name", null: false
+    t.string "group_name"
+    t.string "first_work"
+    t.string "second_work"
+    t.string "third_work"
+    t.string "fourth_work"
+    t.string "fifth_work"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -1,7 +1,11 @@
 class Room < ApplicationRecord
+  has_one_attached :image
   belongs_to :user
-  belongs_to :group
-  has_many :messages, dependent: :destroy
+  has_many :messages, dependent: :destroy 
 
-  validates :room_name, presence: true
+  with_options presence: true do
+    validates :image
+    validates :group_name
+    validates :first_work
+  end
 end

@@ -1,5 +1,30 @@
-<div class='wrapper'>
-  <div class='side'>
-    <%= render "messages/side_bar" %>
+<div class='top-page-header'>
+  <%= link_to image_tag('nippo.png', class:'rogo_image'), "/" %>
+  <div class='nav'>
+    <ul class='lists-right'>
+      <%= link_to current_user.name, edit_user_path(current_user), class: "user-name" %>
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+    </ul>
   </div>
+</div>
+<div class='create_procedure'>
+  <h1 class='heading-name'>機械の手順書</h1>
+  <div class='contents row'>
+    <% @rooms.each do |room| %>
+      <%= link_to(room_path(room.id), method: :get) do %>  
+        <div class='contents'>
+          <%= room.group_name %>
+          <div class='img-tag'>
+           <%= image_tag(room.image, class: 'group-image') if room.image.attached?%>
+          </div>
+          <%= link_to '削除', room_path(room.id), method: :delete %>
+        </div>
+      <% end %>
+    <% end %>    
+  </div>
+</div>
+<div class='create-page'>
+  <%= link_to(new_room_path, class:'create-btn') do %>
+  <span>新規作成</span>
+  <% end %>
 </div>
