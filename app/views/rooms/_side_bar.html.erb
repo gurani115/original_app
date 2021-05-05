@@ -1,0 +1,29 @@
+<div class="side-header">
+  <div class="header-name">
+    <%= link_to @room.group_name, root_path %>
+  </div>
+  <div class="create-room">
+    <%= link_to "手順書の編集", edit_room_path %>
+  </div>
+</div>
+
+<div class="rooms">
+  <div class="room">
+  <h1>作業一覧</h1>
+    <div class="room-name">
+      <%= @room.first_work %>
+    </div>
+    <div class="room-name">
+      <%= @room.second_work %>
+    </div>
+    <div class="room-name">
+      <%= @room.third_work %>
+    </div>
+    <div class="room-name">
+      <%= @room.fourth_work %>
+    </div>
+    <div class="room-name">
+      <%= @room.fifth_work %>
+    </div>
+  </div>
+</div>

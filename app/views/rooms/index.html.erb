@@ -20,7 +20,17 @@
           <%= link_to '削除', room_path(room.id), method: :delete %>
         </div>
       <% end %>
-    <% end %>    
+    <% end %>
+    <% if @rooms.length == 0 %>
+      <li class='image-tag'>
+        <span>新規作成してください</span>
+        <div class='sunple'>
+          <%= link_to '#' do %>
+          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "group-image" %>
+          <% end %>
+        </div>   
+      </li>
+      <% end %>    
   </div>
 </div>
 <div class='create-page'>

@@ -1,0 +1,79 @@
+<div class="message">
+  <div class="lower-message">
+    <div class="message-content">
+      <%= @room.first_work %>
+    </div>
+  </div>
+  <div class="upper-message">
+    <div class="message-text">
+      <div class="messages-text">
+        <%= safe_join(@room.first_text.split("\n"),tag(:br)) %>
+      </div>
+      <div class="main-image">
+        <%= image_tag(@room.image, class: 'image') if @room.image.attached?%>
+      </div>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <%= @room.second_work %>
+    </div>
+  </div>
+  <div class="upper-message">
+    <div class="message-text">
+      <div class="messages-text">
+        <%= safe_join(@room.second_text.split("\n"),tag(:br)) %>
+      </div>
+      <div class="main-image">
+        <%= image_tag(@room.image, class: 'image') if @room.image.attached?%>
+      </div>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <%= @room.third_work %>
+    </div>
+  </div>
+  <div class="upper-message">
+    <div class="message-text">
+      <div class="messages-text">
+        <%= safe_join(@room.third_text.split("\n"),tag(:br)) %>
+      </div>
+      <div class="main-image">
+        <%= image_tag(@room.image, class: 'image') if @room.image.attached?%>
+      </div>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <%= @room.fourth_work %>
+    </div>
+  </div>
+  <div class="upper-message">
+    <div class="message-text">
+      <div class="messages-text">
+        <%= safe_join(@room.fourth_text.split("\n"),tag(:br)) %>
+      </div>
+      <div class="main-image">
+        <%= image_tag(@room.image, class: 'image') if @room.image.attached?%>
+      </div>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <%= @room.fifth_work %>
+    </div>
+  </div>
+  <div class="upper-message">
+    <div class="message-text">
+      <div class="messages-text">
+        <%= safe_join(@room.fifth_text.split("\n"),tag(:br)) %>
+      </div>
+      <div class="main-image">
+        <%= image_tag(@room.image, class: 'image') if @room.image.attached?%>
+      </div>
+    </div>
+    <div class="form-image">
+    </div>
+  </div>
+</div>

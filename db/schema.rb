@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 2021_04_29_140209) do
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "room_name"
-    t.text "text"
+    t.string "title"
+    t.string "text"
     t.bigint "room_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
@@ -51,12 +51,18 @@ ActiveRecord::Schema.define(version: 2021_04_29_140209) do
   end
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "group_name"
-    t.string "first_work"
+    t.string "group_name", null: false
+    t.string "species", null: false
+    t.string "first_work", null: false
     t.string "second_work"
     t.string "third_work"
     t.string "fourth_work"
     t.string "fifth_work"
+    t.string "first_text", null: false
+    t.string "second_text"
+    t.string "third_text"
+    t.string "fourth_text"
+    t.string "fifth_text"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
