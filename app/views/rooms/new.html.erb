@@ -3,6 +3,7 @@
     <div class='title'>新規手順書作成</div>
     <div class='text'>
       <%= form_with(model: @room, local: true) do |form| %>
+      <%= render 'messages/error_messages', model: form.object %>
         <div class='click-upload'>
           <span class='upload'>作業図面の画像</span>
           <%= form.file_field :image, id:'item-image' %>

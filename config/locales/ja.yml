@@ -1,4 +1,12 @@
 ja:
-  time:
-    formats:
-      default: "%Y/%m/%d %H:%M:%S"
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        employee_number: 社員番号
+      room:
+        image: 画像
+        group_name: グループ名
+        species: 機種
+        first_work: 作業名1
+        first_text: 作業名1の作業手順
