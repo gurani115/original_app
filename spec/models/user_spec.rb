@@ -7,6 +7,7 @@ RSpec.describe User, type: :model do
     it '必要な情報が存在すれば登録できること' do
       expect(@user).to be_valid
     end
+    
     it 'nameが空では登録できない' do
       @user.name = ''
       @user.valid?
