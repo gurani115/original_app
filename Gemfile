@@ -62,4 +62,4 @@ gem 'image_processing', '~> 1.2'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rails-i18n'
-
+gem "aws-sdk-s3", require: false
