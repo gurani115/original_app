@@ -1,5 +1,4 @@
 .top-page-header {
-  width: 100vw;
   padding: 10px;
   display: flex;
 }
@@ -36,7 +35,6 @@
 }
 
 .create_procedure {
-  width: 100vw;
   background-color: darkgray;
 }
 
@@ -305,3 +303,143 @@ select {
   display: contents;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.main {
+  width: calc( 100vw - 300px);
+}
+
+.side {
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+}
+
+.side-header {
+  height: 100px;
+  padding: 0px 20px;
+  background-color: #0f1b2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.rooms {
+  background-color: #ccc;
+  height: 100vh;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+  font-size: 20px;
+}
+
+
+.room-name {
+  padding: 0 0 70px 0;
+}
+
+.message-date {
+  color: #999;
+  font-size: 8px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: lightyellow;
+  border-top: 1px solid black;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 40px;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.items-text {
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.items-explain {
+  margin-top: 2vh;
+}
+
+
+.main-heder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  height: 100px;
+}
+
+.main-title {
+  text-align: center;
+  width: 450px;
+  border: 2px solid black;
+  color: darkred;
+  font-size: 50px;
+}
+
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border-left: 1px solid black;
+}
+
+.image {
+  height: 320px;
+  width: 310px;
+  padding: 10px;
+}
+
+
+.form-image {
+  border-top: 1px solid black;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+.alert {
+  color:#262626; 
+  background:#FFEBE8;
+  text-align: center;
+  border:2px solid #990000;
+  padding:12px; font-weight:850;
+}
