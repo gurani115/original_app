@@ -11,29 +11,24 @@
 ### Association
 
 - has_many :rooms
-- has_many :messages
 
 ## roomsテーブル
 
 | Column        | Type   | Option       |
 | ------------- | ------ | ------------ |
-| room_name     | string | null: false  |
+| group_name    | string | null: false  |
+| species       | string | null: false  |
+| first_work    | string | null: false  |
+| second_work   | string |              |
+| third_work    | string |              |
+| fourth_work   | string |              |
+| fifth_work    | string |              |
+| first_text    | string | null: false  |
+| second_text   | string |              |
+| third_text    | string |              |
+| fourth_text   | string |              |
+| fifth_text    | string |              |
 
 ### Association
 
 - belongs_to :user
-- has_many   :messages 
-
-
-## messagesテーブル
-
-| Column | Type       | Option                         |
-| ------ | ---------- | ------------------------------ |
-| text   | text       | null: false                    |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :room
