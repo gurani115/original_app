@@ -398,10 +398,19 @@ select {
 
 .main-heder {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: lightskyblue;
   height: 100px;
+}
+
+.create-name {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.create-name-a {
+  width: 300px;
+  padding-right: 100px;
 }
 
 .main-title {
